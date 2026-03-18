@@ -1,6 +1,6 @@
 variable "vpc_name" {
     description = "network_name"
-    type = "string"
+    type = string
 }
 variable "subnets" {
     description = "creating sunets"

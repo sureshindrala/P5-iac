@@ -5,7 +5,7 @@ resource "google_compute_network" "chathura-network" {
 }
 
 # subnet creation for vpc 
-resource "google_compute_subnetwork" "subnet1" {
+resource "google_compute_subnetwork" "subnet" {
     count = length(var.subnets)
     name = var.subnets[count.index].name
     ip_cidr_range = var.subnets[count.index].ip_cidr_range
