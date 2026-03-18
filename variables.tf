@@ -10,6 +10,16 @@ variable "subnets" {
         subnet_region = string
     }))
 }
+
+variable "instances" {
+    description = "enter the vm values"
+    type = map(object({
+      machine_type = string
+      zone = string
+      subnet = string
+      disk_size = number
+    })) 
+}
   
 
   
