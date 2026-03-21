@@ -14,5 +14,15 @@ resource "google_compute_subnetwork" "subnet" {
     
 }
 
+resource "google_compute_firewall" "name" {
+  name = "chathura-allow-ssh-http-jenkins-ports"
+  network = google_compute_network.chathura-network.name
+  allow {
+    protocol = "tcp"
+    ports    = ["80", "8080", "9000", "22"]
+  }
+  source_ranges = var.source_ranges
+}
+
 
 

@@ -1,0 +1,11 @@
+[jenkins-master]
+10.2.0.7
+[jenkins-master:vars]
+ansible_user=suresh
+ansible_ssh_private_key_file=/home/suresh/ssh-key
+
+[jenkins-slave]
+10.2.0.6
+[jenkins-slave:vars]
+ansible_user=suresh
+ansible_ssh_private_key_file=/home/suresh/ssh-key

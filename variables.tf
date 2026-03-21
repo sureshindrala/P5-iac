@@ -21,5 +21,12 @@ variable "instances" {
     })) 
 }
   
+variable "vm_user" {
+  description = "Username to connect to GCE"
+  type = string
+}
 
-  
+# Source range
+variable "source_ranges" {
+  type = list(string)
+}

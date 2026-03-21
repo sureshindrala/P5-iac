@@ -38,6 +38,11 @@ instances = {
     }
 }
 
+# vm user name
+vm_user = "suresh"
+
+# Source range
+source_ranges = [ "0.0.0.0/0" ]
 
 
 
