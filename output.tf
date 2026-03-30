@@ -12,9 +12,9 @@ output "instance_ips" {
 
 
 # # Public ip of ansible
-# output "ansible_instance_public_ip" {
-#   value = google_compute_instance.tf-vm-instance["ansible"].network_interface.0.access_config[0].nat_ip
-# }
+ output "ansible_instance_public_ip" {
+   value = google_compute_instance.tf-vm-instances["ansible"].network_interface.0.access_config[0].nat_ip
+ }
 
 # # public ip of jenkins-master
 # output "jenkins_master_public_ip" {
